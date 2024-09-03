@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Inspiration App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Inspiration App</h1>
+        <input type="text" id="countryInput" placeholder="Enter a country name">
+        <button id="searchBtn">Search</button>
+    </header>
+
+    <main>
+        <section id="countryDetails"></section>
+        <section id="imageGallery"></section>
+    </main>
+
+    <footer>
+        <div id="paginationControls">
+            <button id="prevPageBtn">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPageBtn">Next</button>
+        </div>
+        <section id="favorites">
+            <h2>My Favorites</h2>
+            <ul id="favoritesList"></ul>
+        </section>
+    </footer>
+
+    <script type="module" src="js/events.js"></script>
+</body>
+</html>

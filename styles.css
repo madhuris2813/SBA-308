@@ -1,0 +1,139 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header input {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+header button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #218838;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#countryDetails {
+    margin-bottom: 20px;
+}
+
+#countryDetails h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#countryDetails img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#imageGallery img {
+    max-width: calc(33.333% - 10px);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#imageGallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Pagination controls */
+#paginationControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#paginationControls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#paginationControls button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+/* Favorites section */
+#favorites {
+    margin-top: 40px;
+}
+
+#favorites h2 {
+    font-size: 1.5em;
+}
+
+#favoritesList {
+    list-style: none;
+    padding: 0;
+}
+
+#favoritesList li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#favoritesList button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#favoritesList button:hover {
+    background-color: #c82333;
+}
